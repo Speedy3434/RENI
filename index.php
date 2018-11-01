@@ -7,7 +7,9 @@
     <title>Tiendas RENI</title>
     <link rel="stylesheet" href="diseño.css">
 </head>
-<body>
+<body bgcolor= "#FFCCCC">
+    <?php include 'header.php' ?>
     <?php include 'cabecera.php' ?>
+    
 </body>
 </html>

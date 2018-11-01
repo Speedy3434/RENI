@@ -20,3 +20,7 @@ nav > ul {
 nav > ul > li {
     margin: 10px 50px;        
 }
+
+body > header {
+    text-align: center;
+}
