@@ -1,0 +1,12 @@
+#banner {
+    margin-top: 50px;
+}
+
+#banner img{
+    width: 2500;
+    height: 500;
+}
+
+#banner .contenedor{
+    position: absolute;
+}

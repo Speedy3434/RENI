@@ -5,11 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Tiendas RENI</title>
-    <link rel="stylesheet" href="diseño.css">
+    <link rel="stylesheet" href="css/fontello.css">
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/banner.css">
 </head>
-<body bgcolor= "#FFCCCC">
+<body>
     <?php include 'header.php' ?>
-    <?php include 'cabecera.php' ?>
+    <?php include 'principal.php' ?>
     
 </body>
 </html>
