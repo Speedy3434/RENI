@@ -13,7 +13,3 @@
 </head>
 <body bgcolor="fdddca">
     <?php include 'header.php' ?>
-    <?php include 'principal.php' ?>
-    
-</body>
-</html>

@@ -1,0 +1,23 @@
+#blog h3, h4 {
+    text-align: center;
+}
+
+#blog .contenedor{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#blog article {
+    margin: 15px;
+}
+
+
+#clasic{
+    width: 200px;
+    height: 200px;
+}
+#chicas{
+    width: 200px;
+    height: 200px;
+}
