@@ -8,7 +8,8 @@
             <a href="descuentos.php">Descuentos</a>
             <a href="">Catalogo</a>
             <a href="">Iniciar Sesion</a>
-            <a href="">Crear Cuenta</a>
+            <a href="registro.php">Crear Cuenta</a>
+            
         </nav>
     </Div>
 </header>

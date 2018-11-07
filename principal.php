@@ -10,7 +10,7 @@
 
     <section id="bienvenidos">
         <h2>Bienvenidos a nuestra tienda</h2>
-        <p>Aquí puedes tener la taza, tomatodo que tanato deseaste 
+        <p>Aquí puedes tener la taza, tomatodo que tanto deseaste 
             con tu propio diseño, lo unico que necesitas es mucha creativad
             ya que eso es tu unico limite.</p>
     </section>
