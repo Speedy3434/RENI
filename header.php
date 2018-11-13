@@ -1,5 +1,5 @@
 <header>
-    <Div class="contenedor">
+    <div class="contenedor">
         <h1 class="icon-coffee">Tienda RENI</h1>
         <input type="Checkbox" id="menu-bar">
         <label class="icon-menu" for="menu-bar"></label>
@@ -9,7 +9,7 @@
             <a href="">Catalogo</a>
             <a href="">Iniciar Sesion</a>
             <a href="registro.php">Crear Cuenta</a>
-            
+             
         </nav>
-    </Div>
+    </div>
 </header>
