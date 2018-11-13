@@ -16,9 +16,6 @@
     <main>
     <section id="banner">
         <img src="http://blog.camisetaimedia.com/wp-content/uploads/2016/07/taza-personalizada-banner-largo-1.jpg">
-        <div class="contenedor">
-            <h5>Descuentos de tazas</h2>
-        </div>
 
         <section id="bienvenidos">
             <h2>Los descuentos que tenemos para tí</h2>

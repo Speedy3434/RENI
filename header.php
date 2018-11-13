@@ -7,7 +7,7 @@
             <a href="index.php">Inicio</a>
             <a href="descuentos.php">Descuentos</a>
             <a href="">Catalogo</a>
-            <a href="">Iniciar Sesion</a>
+            <a href="login.php">Iniciar Sesion</a>
             <a href="registro.php">Crear Cuenta</a>
              
         </nav>
