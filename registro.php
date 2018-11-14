@@ -1,8 +1,5 @@
 <?php
 session_start();
-$db = new PDO('mysql:host=localhost;dbname=reni;charset=utf8', 'root', '');
-$stmt = $db->query("SELECT * FROM usuarios ORDER BY id DESC");
-
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -31,17 +28,19 @@ $stmt = $db->query("SELECT * FROM usuarios ORDER BY id DESC");
     <form action="procesar_usuario.php" method="post" class="registrar">
         <h2 class="titulo">Crea tu Cuenta</h2>
         <div class="contenedor-input">
+            
+            <input type="email" name="correo" placeholder="Correo" class="ancho_100" required>  
+
+            <input type="password" name="password1" placeholder="Contraseña" class="ancho_48" required>
+
+            <input type="text" name="usuario" placeholder="Usuario" class="ancho_48" required>
+            
             <input type="text" name="nombres" placeholder="Nombre" class="ancho_48" required>
 
             <input type="text" name="apellidos" placeholder="Apellido" class="ancho_48" required>
 
-            <input type="email" name="correo" placeholder="Correo" class="ancho_100" required>
-
-            <input type="text" name="usuario" placeholder="Usuario" class="ancho_48" required>
+            <button type="submit" class="btn">Registrar</button>
             
-            <input type="password" name="password" placeholder="Contraseña" class="ancho_48" required>
-
-            <input type="submit" value="Registrar" class="btn">
             <p class="linkk">¿Ya tienes una cuenta? <a href="login.php">Ingresa aquí</a></p>
         </div>
     </form>
