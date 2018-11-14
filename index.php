@@ -1,7 +1,5 @@
 <?php
 session_start();
-$db = new PDO('mysql:host=localhost;dbname=reni;charset=utf8', 'root', '');
-$stmt = $db->query("SELECT * FROM usuarios ORDER BY id DESC");
 
 ?>
 

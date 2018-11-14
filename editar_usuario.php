@@ -1,7 +1,9 @@
 <?php
 session_start();
+$id = intval($_GET["id"]);
 $db = new PDO('mysql:host=localhost;dbname=reni;charset=utf8', 'root', '');
-$stmt = $db->query("SELECT * FROM usuarios ORDER BY id DESC");
+$stmt = $db->query("SELECT * FROM usuarios WHERE id = '$id'");
+$u = $stmt->fetchObject();
 
 ?>
 <!DOCTYPE html>
@@ -10,7 +12,7 @@ $stmt = $db->query("SELECT * FROM usuarios ORDER BY id DESC");
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Inicar Sesión</title>
+    <title>Formulario de resgistro</title>
     <link rel="stylesheet" href="css/fontello.css">
     <link rel="stylesheet" href="css/estilo.css">
     <link rel="stylesheet" href="css/menu.css">
@@ -28,17 +30,22 @@ $stmt = $db->query("SELECT * FROM usuarios ORDER BY id DESC");
     </section>
     </main>
 
-    <form action="login_procesar.php" method="post" class="registrar">
-        <h2 class="titulo">Inicia Sesión</h2>
-        <div class="contenedor-input">
-            <input type="email" name="correo" placeholder="Correo" class="ancho_100" required>
-           
-            <input type="password" name="password" placeholder="Contraseña" class="ancho_100" required>
+    <form action="procesar_editar_usuario.php" method="post">
+        <input type="hidden" name="id" value="<?php echo intval($_GET['id'])?>">
+        <div>
+            Correo: <input type="email" name="correo" value="<?php echo $u->correo?>">
 
-            <input type="submit" value="Iniciar" class="btn">
-            <p class="linkk">Registrate Gratis <a href="registro.php">Ingresa aquí</a></p>
+            Usuario: <input type="text" name="usuario" value="<?php echo $u->usuario?>">
+        
+            Nombres: <input type="text" name="nombres" value="<?php echo $u->nombres?>">
+        
+            Apellidos: <input type="text" name="apellidos" value="<?php echo $u->apellidos?>">
+
         </div>
+
+        <button type="submit">Editar cuenta</button>
     </form>
 
 </body>
 </html>
+

@@ -6,6 +6,7 @@
         <nav class="menu">
             <a href="index.php">Inicio</a>
             <a href="descuentos.php">Descuentos</a>
+            <a href="registrar_descuento.php">Registro De Descuentos</a>
             <a href="">Catalogo</a>
             <a href="login.php">Iniciar Sesion</a>
             <a href="registro.php">Crear Cuenta</a>

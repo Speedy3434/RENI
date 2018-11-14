@@ -11,5 +11,5 @@ $db = new PDO('mysql:host=localhost;dbname=reni;charset=utf8', 'root', '');
 $db->query("INSERT INTO usuarios VALUES (NULL, '$c', '$p1', $u, '$n', '$a')");
 
 # Salida
-header('Location: confirmar_usuario.php');
+header('Location: index.php');
 ?>
